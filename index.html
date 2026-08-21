@@ -1,30 +1,102 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Mun'mah Fashionmonger</title>
 <style>
-*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#171717}
-header{background:linear-gradient(135deg,#080808,#111,#164a9c);color:white;padding:65px 20px;text-align:center}
-.logo{width:78px;height:78px;border-radius:50%;margin:auto auto 18px;background:#e21d2d;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;border:4px solid white}
-h1{font-size:42px;margin:0 0 10px}.tagline{font-size:20px;font-weight:bold}
-nav{position:sticky;top:0;background:#111;padding:14px;text-align:center;z-index:5}nav a{color:white;text-decoration:none;margin:7px;font-weight:bold;font-size:14px}
-.hero{text-align:center;background:white;padding:55px 20px}.hero h2,.title{color:#164a9c}.hero p{max-width:700px;margin:0 auto 20px;line-height:1.6}
-section{max-width:1050px;margin:auto;padding:50px 20px}.title{text-align:center;font-size:30px}
-.btn{display:inline-block;background:#e21d2d;color:white;text-decoration:none;padding:14px 24px;border-radius:8px;font-weight:bold;margin:6px}.blue{background:#164a9c}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card,.contact{background:white;padding:28px;border-radius:14px;box-shadow:0 4px 16px #dfe3ea;text-align:center;border-top:4px solid #e21d2d}.card h3{color:#164a9c}.card p{line-height:1.6}
-.about{background:#111;color:white;border-radius:16px;padding:30px}.about .title{color:white}.number{font-size:22px;font-weight:bold;color:#164a9c}
-footer{background:#080808;color:white;text-align:center;padding:30px}footer strong{color:#e21d2d}.small{font-size:13px;color:#ccc}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#171717}
+header{background:linear-gradient(135deg,#080808,#111,#164a9c);color:#fff;text-align:center;padding:65px 20px}
+.logo{width:78px;height:78px;border-radius:50%;margin:auto auto 18px;background:#e21d2d;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;border:4px solid #fff}
+h1{font-size:42px;margin:0 0 10px}.tag{font-size:20px;font-weight:bold}
+nav{position:sticky;top:0;background:#111;padding:14px;text-align:center;z-index:5}
+nav a{color:#fff;text-decoration:none;margin:6px;font-weight:bold;font-size:14px}
+section{max-width:1100px;margin:auto;padding:50px 20px}
+.hero{text-align:center;background:#fff;padding:55px 20px}
+.hero h2,.title{color:#164a9c}.hero p{max-width:760px;margin:0 auto 20px;line-height:1.6}
+.title{text-align:center;font-size:30px}
+.btn{display:inline-block;background:#e21d2d;color:#fff;text-decoration:none;padding:14px 24px;border-radius:8px;font-weight:bold;margin:6px}.blue{background:#164a9c}
+.cards,.gallery,.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.card,.tile{background:#fff;padding:26px;border-radius:14px;text-align:center;box-shadow:0 4px 16px #dfe3ea;border-top:4px solid #e21d2d}
+.card h3,.tile h3{color:#164a9c}.tile .icon{font-size:46px}
+.about{background:#111;color:#fff;border-radius:16px;padding:30px}.about .title{color:#fff}
+.products-wrap{background:#eef3fb;border-radius:18px}
+.contact{background:#fff;padding:30px;border-radius:16px;text-align:center;box-shadow:0 4px 16px #dfe3ea}
+.number{font-size:22px;font-weight:bold;color:#164a9c}
+footer{background:#080808;color:#fff;text-align:center;padding:30px}footer strong{color:#e21d2d}
 @media(max-width:600px){h1{font-size:31px}nav a{display:inline-block;margin:5px}}
-</style></head><body>
-<header id="home"><div class="logo">MF</div><h1>Mun'mah Fashionmonger</h1><div class="tagline">Kukongola Kumayambira pa Mavalidwe</div></header>
-<nav><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#school">Tailoring School</a><a href="#contact">Contact</a></nav>
-<div class="hero"><h2>Welcome to Mun'mah Fashionmonger</h2><p>Professional tailoring and fashion design for people who want to look confident, smart and unique. Timapanga zovala molingana ndi style ndi measurements anu.</p><a class="btn" href="https://wa.me/265980522788">Order on WhatsApp</a><a class="btn blue" href="#services">View Services</a></div>
-<section id="about"><div class="about"><h2 class="title">About Mun'mah Fashionmonger</h2><p>Mun'mah Fashionmonger ndi fashion and tailoring brand yomwe imayang'ana pa kupanga zovala zokongola, zaukhondo komanso zogwirizana ndi munthu aliyense. Cholinga chathu ndi kupereka quality workmanship ndi designs zomwe zimapangitsa customer kukhala confident pa mavalidwe ake.</p></div></section>
-<section id="services"><h2 class="title">Our Services</h2><div class="cards">
+</style>
+</head>
+<body>
+<header id="home">
+<div class="logo">MF</div>
+<h1>Mun'mah Fashionmonger</h1>
+<div class="tag">Kukongola Kumayambira pa Mavalidwe</div>
+</header>
+
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+<a href="#gallery">Gallery</a><a href="#products">Products</a><a href="#school">Tailoring School</a><a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<h2>Welcome to Mun'mah Fashionmonger</h2>
+<p>Professional tailoring, fashion design, embroidery, uniforms, fabrics and sewing materials. Timakupatsani quality ndi style yomwe ikugwirizana ndi zosowa zanu.</p>
+<a class="btn" href="https://wa.me/265980522788">Order on WhatsApp</a>
+<a class="btn blue" href="#services">View Services</a>
+</div>
+
+<section id="about"><div class="about">
+<h2 class="title">About Mun'mah Fashionmonger</h2>
+<p>Mun'mah Fashionmonger ndi fashion and tailoring brand yomwe imapanga zovala zokongola, zaukhondo komanso zogwirizana ndi customer aliyense. Timathandizanso ma church, ma school, individuals ndi mabizinesi omwe amafunikira uniforms kapena bulk orders.</p>
+</div></section>
+
+<section id="services"><h2 class="title">Our Services</h2>
+<div class="cards">
 <div class="card"><h3>Custom Tailoring</h3><p>Zovala zopangidwa molingana ndi measurements ndi style yanu.</p></div>
-<div class="card"><h3>Fashion Design</h3><p>Dresses, suits, heritage attire ndi ma design ena apadera.</p></div>
-<div class="card"><h3>Embroidery</h3><p>Embroidery yokongola pa shirts, gowns ndi ma garment ena.</p></div>
-<div class="card"><h3>Sewing Materials</h3><p>Quality sewing materials zothandiza pa tailoring ndi fashion projects.</p></div></div></section>
-<section id="school"><h2 class="title">Mun'mah Fashionmonger Tailoring School</h2><div class="card"><h3>Learn. Create. Become a Professional.</h3><p>Phunzirani tailoring ndi fashion skills kuchokera pa basic sewing mpaka advanced garment construction.</p><a class="btn blue" href="https://wa.me/265980522788?text=Hello%20Mun%27mah%20Fashionmonger%2C%20I%20would%20like%20to%20ask%20about%20the%20Tailoring%20School.">Ask About the School</a></div></section>
-<section id="contact"><h2 class="title">Contact Us</h2><div class="contact"><p class="number">+265 980 522 788</p><p>For orders, measurements, tailoring enquiries and school registration.</p><a class="btn" href="https://wa.me/265980522788">Chat on WhatsApp</a><a class="btn blue" href="tel:+265980522788">Call Now</a></div></section>
-<footer><p><strong>Mun'mah Fashionmonger</strong></p><p>Kukongola Kumayambira pa Mavalidwe</p><p class="small">© 2026 Mun'mah Fashionmonger. All rights reserved.</p></footer>
-</body></html>
+<div class="card"><h3>Fashion Design</h3><p>Dresses, gowns, shirts, suits, heritage attire ndi ma design ena apadera.</p></div>
+<div class="card"><h3>Embroidery</h3><p>Embroidery pa shirts, gowns, uniforms ndi ma garment ena.</p></div>
+<div class="card"><h3>Church Uniforms</h3><p>Uniforms za ma church, ma groups ndi ma ministries.</p></div>
+<div class="card"><h3>School Uniforms</h3><p>School uniforms zopangidwa molingana ndi requirements za school yanu.</p></div>
+<div class="card"><h3>Bulk Orders</h3><p>Ma order ambiri a uniforms, events ndi organisations.</p></div>
+</div></section>
+
+<section id="gallery"><h2 class="title">Our Gallery</h2>
+<div class="gallery">
+<div class="tile"><div class="icon">👗</div><h3>Dresses & Gowns</h3></div>
+<div class="tile"><div class="icon">👔</div><h3>Shirts & Suits</h3></div>
+<div class="tile"><div class="icon">✨</div><h3>Embroidery</h3></div>
+<div class="tile"><div class="icon">🧵</div><h3>Chitenje Designs</h3></div>
+<div class="tile"><div class="icon">⛪</div><h3>Church Uniforms</h3></div>
+<div class="tile"><div class="icon">🏫</div><h3>School Uniforms</h3></div>
+<div class="tile"><div class="icon">🎓</div><h3>Tailoring School</h3></div>
+</div></section>
+
+<section id="products" class="products-wrap"><h2 class="title">Fabrics & Sewing Materials</h2>
+<div class="products">
+<div class="tile"><div class="icon">🪡</div><h3>Fabrics & Chitenje</h3><p>Fabrics for dresses, shirts, gowns and other designs.</p></div>
+<div class="tile"><div class="icon">🧵</div><h3>Sewing Materials</h3><p>Threads and materials for sewing projects.</p></div>
+<div class="tile"><div class="icon">🧷</div><h3>Tailoring Accessories</h3><p>Zips, buttons, lining and other accessories.</p></div>
+<div class="tile"><div class="icon">📏</div><h3>Measurements & Size Support</h3><p>Guidance for choosing the right size and fit.</p></div>
+</div>
+<p style="text-align:center;margin-top:25px"><a class="btn" href="https://wa.me/265980522788?text=Hello%20Mun%27mah%20Fashionmonger%2C%20I%20would%20like%20to%20ask%20about%20fabrics%20and%20sewing%20materials.">Ask About Products</a></p>
+</section>
+
+<section id="school"><h2 class="title">Mun'mah Fashionmonger Tailoring School</h2>
+<div class="card"><h3>Learn. Create. Become a Professional.</h3>
+<p>Phunzirani tailoring ndi fashion skills kuchokera pa basic sewing mpaka advanced garment construction.</p>
+<a class="btn blue" href="https://wa.me/265980522788?text=Hello%20Mun%27mah%20Fashionmonger%2C%20I%20would%20like%20to%20ask%20about%20the%20Tailoring%20School.">Ask About the School</a>
+</div></section>
+
+<section id="contact"><h2 class="title">Contact Us</h2>
+<div class="contact"><p class="number">+265 980 522 788</p>
+<p>Orders, measurements, uniforms, fabrics, sewing materials and school enquiries.</p>
+<a class="btn" href="https://wa.me/265980522788">Chat on WhatsApp</a>
+<a class="btn blue" href="tel:+265980522788">Call Now</a>
+</div></section>
+
+<footer><p><strong>Mun'mah Fashionmonger</strong></p>
+<p>Kukongola Kumayambira pa Mavalidwe</p><p>© 2026 Mun'mah Fashionmonger. All rights reserved.</p></footer>
+</body>
+</html>
